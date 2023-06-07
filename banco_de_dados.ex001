@@ -1,4 +1,5 @@
 /*--COMANDO PARA CRIAR O BANCO DE DADOS--*/
+
 create database clientes_trafego_pago;
 
 /*COMANDO PARA ACESSAR O BANCO DE DADOS*/
