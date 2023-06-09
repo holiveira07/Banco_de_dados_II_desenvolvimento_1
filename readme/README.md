@@ -1,4 +1,4 @@
-# Banco_de_dados_II_desenvolvimento_1
+# Banco_de_dados_II
 
 Desenvolva um banco de dados e relacione tabelas através de chaves estrangeiras ou nomes de colunas iguais. Siga as instruções:
 crie uma base de dados; 

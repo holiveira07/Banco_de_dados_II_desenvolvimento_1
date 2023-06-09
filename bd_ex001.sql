@@ -35,23 +35,26 @@ insert into plataforma_de_anuncio
 values
 ('Instagram', '500.0'), ('Google', '800.0'), ('Taboola', '700.0'), ('Linkedin', '400.0');
 
+/*--Esse método retorna os registros que são comuns entre as tabelas.--*/
 
 select nome_clientes, nome_plataforma from clientes 
-/*--Esse método retorna os registros que são comuns entre as tabelas.--*/
 inner join plataforma_de_anuncio on clientes.id_clientes = plataforma_de_anuncio.clientes_id;
  
 
  /*--Esse método apresenta todos os registros que estão em uma tabela, mesmo que não tenham 
  ligação com a outra. Além disso, ele apresenta os registros em comum entre as tabelas.--*/
+
  select nome_clientes, nome_plataforma from clientes 
  left join plataforma_de_anuncio on clientes.id_clientes = plataforma_de_anuncio.clientes_id;
  
  /*--Esse método apresenta todos os registros que estão em uma tabela, mesmo que não tenham ligação
  com a outra. Além disso, ele mostra os registros em comum entre as tabelas.--*/
+ 
  select nome_clientes, nome_plataforma from clientes 
  right join plataforma_de_anuncio on clientes.id_clientes = plataforma_de_anuncio.clientes_id;
  
  /*--Como resultado dessa consulta, obtemos todos os dados de ambas as tabelas.--*/
+ 
  select nome_clientes, nome_plataforma from clientes 
  left join plataforma_de_anuncio on clientes.id_clientes = plataforma_de_anuncio.clientes_id
  union
